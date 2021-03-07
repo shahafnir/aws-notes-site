@@ -1,0 +1,53 @@
+.note-new-container {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .new-note-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+
+      input,
+      textarea {
+        margin-top: 8px;
+        max-width: 500px;
+      }
+
+      textarea {
+        height: 100px;
+        max-height: 500px;
+      }
+    }
+
+    button {
+      width: fit-content;
+      padding: 8px 16px;
+      background-color: #2424db;
+      border: 1px solid lightblue;
+      color: lightblue;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+
+      &:enabled {
+        &:hover,
+        &:active {
+          background-color: #4949da;
+          cursor: pointer;
+        }
+      }
+
+      &:disabled {
+        opacity: 0.3;
+      }
+    }
+  }
+}
